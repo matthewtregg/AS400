@@ -63,10 +63,9 @@ app.get('/',(req,res) =>{
 
 app.get('/projects',(req,res) =>{
 	//res.send('<h1>Hello Express!</h1>');
-
 	res.render('projects.hbs',{
 		currentYear: new Date().getFullYear(),
-		welcomeMessage: 'Portfolio page hear'
+		projectMessage: 'Portfolio page here'
 	});
 });
 
