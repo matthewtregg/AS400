@@ -20,13 +20,16 @@ app.use((req,res,next) => {
 		}
 	})
 
-app.listen(port, () =>{
-	console.log(`Server is up on port ${port}`);
-});
+
 
 
 	next();
 
+});
+
+
+app.listen(port, () =>{
+	console.log(`Server is up on port ${port}`);
 });
 
 app.use((req,res,next) => {
@@ -80,8 +83,3 @@ app.get('/bad', (req,res) =>{
 		errormessage: 'Unable to handle request'
 	})
 })
-
-app.listen(3000, () => {
-	console.log('Server is up on port 3000')
-
-});
